@@ -1,0 +1,23 @@
+body {
+    background-color: olive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-info {
+    background-color: skyblue;
+    border: .25em solid grey;
+    text-align: center;
+    padding: 1em 4.5em;
+}
+
+img {
+    width: 95%;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
