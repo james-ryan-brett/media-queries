@@ -53,3 +53,42 @@ img {
 footer{
     margin-right: auto;
 }
+
+/*Transitioned to larger screen*/
+@media screen and (min-width:992px) {
+    body {
+        background-color: brown;
+    }
+    .hidden-on-desktop {
+        display: none;
+    }
+    h1 {
+        align-self: flex-start;
+    }
+    ul>li{
+        background-color: white;
+        text-align: right;
+        padding-top:  .5em ;
+        padding-bottom: .5em;
+        margin: 10px;
+        width: auto;
+    }
+    nav{
+        display: flex;
+        /*justify-content: flex-end;*/
+        flex-direction: row-reverse;
+        width: 130%;
+        align-content: flex-end;
+        align-self: flex-start;
+        margin-left: auto;
+        float: right;
+    }
+    li>a{
+        color: blue;
+    }
+    .nav-links{
+        list-style: none;
+        margin: .5em;
+        padding-right: 2.5em;
+    }
+}
