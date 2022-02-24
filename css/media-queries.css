@@ -3,13 +3,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Lobster', cursive;
+    margin: 2em 1em;
 }
 /*Nav*/
 .alert-info {
     background-color: skyblue;
     border: .2em solid grey;
     text-align: center;
-    padding: 1em 4.5em;
+    padding: 1em 1em;
 }
 .alert-info a{
     text-decoration: none;
@@ -28,7 +30,7 @@ nav{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 130%;
+    width: 100%;
 }
 li>a{
     color: blue;
@@ -36,7 +38,8 @@ li>a{
  .nav-links{
      list-style: none;
      margin: .5em;
-     padding-right: 2.5em;
+     padding: 0;
+     /*padding-right: 2.5em;*/
  }
 /*Image*/
 img {
@@ -48,11 +51,15 @@ img {
     justify-content: center;
     margin: 0;
 }
+.hidden-on-mobile {
+    display: none;
+}
 
 /*footers*/
 footer{
     margin-right: auto;
 }
+
 
 /*Transitioned to larger screen*/
 @media screen and (min-width:992px) {
@@ -60,10 +67,14 @@ footer{
         background-color: white;
         flex-direction: row;
         flex-wrap: wrap;
-        margin: 1em 1em;
+        margin: 1em 2em;
     }
     .hidden-on-desktop {
         display: none;
+    }
+    .hidden-on-mobile{
+        display: block;
+        width: 100%;
     }
     h1 {
         align-self: flex-start;
@@ -89,7 +100,8 @@ footer{
     li>a{
         color: blue;
     }
-     /*is ul */  .nav-links{
+     /*is ul */
+    .nav-links{
         display: flex;
         flex-wrap: wrap;
         list-style: none;
@@ -104,7 +116,7 @@ footer{
     }
     img{
         margin: 0;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .header-img{
